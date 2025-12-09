@@ -16,7 +16,7 @@
             font-family: "Cinzel", serif;
             font-family: "Montserrat", sans-serif;
             
-             font-weight: 400;
+             /* font-weight: 400; */
              font-style: normal;
             background-color: rgb(239, 239, 239);
             /* margin-top: 70px; */
@@ -90,6 +90,7 @@
             cursor: pointer;
         }
         .video-info{
+            color: black;
            
             
         }
@@ -267,7 +268,7 @@
             width: 120px;
             /* background-color: rgb(240, 240, 240); */
             z-index: 100;
-            font-weight: bold;
+            font-weight: 400;
          }
          .video-time{
             position: absolute;
@@ -296,7 +297,7 @@
          }
          .side-bar-link{
             /* font-family: 'Times New Roman', Times, serif; */
-            font-size: 18px;
+            font-size: 12px;
             height: 110px;
             display: flex;
            
@@ -305,6 +306,9 @@
             align-items: center;
 
 
+         }
+         .side-bar-link p{
+            white-space: nowrap;
          }
          .side-bar-link:hover{
             cursor: pointer;
@@ -457,12 +461,17 @@
        
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img src="./images/image.png" alt="" class="thumbnail">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                  <img src="./images/image.png" alt="" class="thumbnail">
+              </a>
                 <div class="video-time">12:00</div>
             </div>
             <div class="video-info-grid" >
                 <div class="channel-picture">
-                    <img class="profile-Picture" src="images/channel-1.jpg" alt="">
+                    <a href="https://www.youtube.com/c/mkbhd">
+                        <img class="profile-Picture" src="images/channel-1.jpg" alt="">
+                    </a>
+                    
                 </div>
                <div class="video-info">
         
@@ -480,15 +489,21 @@
                </div>
             </div>
         </div>
+        
         <div class="video-preview">
             <div class="thumbnail-row">
-                <img src="./images/thumbnail-2.webp" alt="" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                <img class="thumbnail" src="images/thumbnail-2.webp">
+              </a>
                 <div class="video-time">9:00</div>
 
             </div>
             <div class="video-info-grid" >
                 <div class="channel-picture">
-                    <img class="profile-Picture" src="images/channel-2.jpg" alt="">
+                    
+                    <a href="https://www.youtube.com/c/markiplier">
+                  <img class="profile-Picture" src="images/channel-2.jpg">
+                </a>
                 </div>
                <div class="video-info">
         
@@ -505,21 +520,28 @@
                </div>
             </div>
         </div>
+
          <div class="video-preview">
             <div class="thumbnail-row">
-                <img src="./images/thumbnail-2.webp" alt="" class="thumbnail">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                <img class="thumbnail" src="images/thumbnail-4.webp">
+              </a>
                 <div class="video-time">40:00</div>
 
             </div>
             <div class="video-info-grid" >
                 <div class="channel-picture">
-                    <img class="profile-Picture" src="images/channel-2.jpg" alt="">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-4.jpeg">
+                </a>
                 </div>
                <div class="video-info">
         
-                   <p class="video-title">
-                      Try Not To Laugh Challenge #9
-                   </p>
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch">
+                    The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                  </a>
+                </p>
                    <p class="video-author">
                      Markiplier
                    </p>
@@ -530,6 +552,7 @@
                </div>
             </div>
         </div>
+        
          <div class="video-preview">
             <div class="thumbnail-row">
                 <img src="./images/thumbnail-2.webp" alt="" class="thumbnail">
@@ -555,21 +578,59 @@
                </div>
             </div>
         </div>
+
          <div class="video-preview">
             <div class="thumbnail-row">
-                <img src="./images/thumbnail-2.webp" alt="" class="thumbnail">
-                <div class="video-time">40:54</div>
-
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                  <img src="./images/image.png" alt="" class="thumbnail">
+              </a>
+                <div class="video-time">12:00</div>
             </div>
             <div class="video-info-grid" >
                 <div class="channel-picture">
-                    <img class="profile-Picture" src="images/channel-2.jpg" alt="">
+                    <a href="https://www.youtube.com/c/mkbhd">
+                        <img class="profile-Picture" src="images/channel-1.jpg" alt="">
+                    </a>
+                    
                 </div>
                <div class="video-info">
         
                    <p class="video-title">
-                      Try Not To Laugh Challenge #9
+                       Talking Tech and AI with Google CEO Sundar Pichai!
                    </p>
+                   <p class="video-author">
+                       Google Developers
+        
+                   </p>
+                   <p class="video-status">
+                       1M views &#183; 2 days ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>  
+
+          <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
                    <p class="video-author">
                      Markiplier
                    </p>
@@ -580,21 +641,213 @@
                </div>
             </div>
         </div>
-         <div class="video-preview">
+        <div class="video-preview">
             <div class="thumbnail-row">
-                <img src="./images/thumbnail-2.webp" alt="" class="thumbnail">
-                <div class="video-time">3:54</div>
+                <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                <img class="thumbnail" src="images/thumbnail-7.webp">
+              </a>
+                <div class="video-time">40:00</div>
 
             </div>
             <div class="video-info-grid" >
                 <div class="channel-picture">
-                    <img class="profile-Picture" src="images/channel-2.jpg" alt="">
+                    <a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+                  <img  class="profile-Picture" src="images/channel-7.jpeg">
+                </a>
                 </div>
                <div class="video-info">
         
-                   <p class="video-title">
-                      Try Not To Laugh Challenge #9
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
+                   <p class="video-author">
+                     Markiplier
                    </p>
+                   <p class="video-status">
+                       19M views &#183; 4 years ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
+                   <p class="video-author">
+                     Markiplier
+                   </p>
+                   <p class="video-status">
+                       19M views &#183; 4 years ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
+                   <p class="video-author">
+                     Markiplier
+                   </p>
+                   <p class="video-status">
+                       19M views &#183; 4 years ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
+                   <p class="video-author">
+                     Markiplier
+                   </p>
+                   <p class="video-status">
+                       19M views &#183; 4 years ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
+                   <p class="video-author">
+                     Markiplier
+                   </p>
+                   <p class="video-status">
+                       19M views &#183; 4 years ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
+                   <p class="video-author">
+                     Markiplier
+                   </p>
+                   <p class="video-status">
+                       19M views &#183; 4 years ago
+        
+                   </p>
+               </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                <img class="thumbnail" src="images/thumbnail-3.webp">
+              </a>
+                <div class="video-time">40:00</div>
+
+            </div>
+            <div class="video-info-grid" >
+                <div class="channel-picture">
+                    <a href="https://www.youtube.com/user/SSSniperWolf">
+                  <img  class="profile-Picture" src="images/channel-3.jpg">
+                </a>
+                </div>
+               <div class="video-info">
+        
+                 <p class="video-title">
+                  <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </a>
+                </p>
                    <p class="video-author">
                      Markiplier
                    </p>
