@@ -21,10 +21,13 @@
             background-color: rgb(239, 239, 239);
             /* margin-top: 70px; */
             padding-top: 100px;
-            margin-left: 150px;
+            margin-left: 0px;
             height: 1000vh;
             padding-right: 40px;
             
+        }
+        body.sidebar-open{
+            margin-left: 150px;
         }
         p{
             margin-top: 0px;
@@ -94,10 +97,12 @@
            
             
         }
+
         .thumbnail-row{
             margin-bottom: 15px;
             position: relative;
         }
+
         a{
             text-decoration: none;
         }
@@ -175,17 +180,10 @@
             display: flex;
             align-items: center;
         }
-
-        .right-side{
-            width: 200px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-shrink: 0;
-        }
       .left-side  img{
             height: 24px;
             margin-right: 10px;
+            cursor: pointer;
         
  
         }
@@ -243,6 +241,13 @@
             /* margin-left: 10px; */
 
         }    
+        .right-side{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
         .center-side :nth-child(2){
             border: 1px solid rgb(204, 204, 204);
            background-color:   rgba(229, 229, 229, 0.523);
@@ -269,6 +274,10 @@
             /* background-color: rgb(240, 240, 240); */
             z-index: 100;
             font-weight: 400;
+            display: none;
+         }
+         .sidebar.show{
+            display: block;
          }
          .video-time{
             position: absolute;
@@ -300,7 +309,6 @@
             font-size: 12px;
             height: 110px;
             display: flex;
-           
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -356,7 +364,7 @@
 <body>
     <div class="header">
         <div class="left-side">
-            <img src="images/download.svg" alt="">
+            <img id="hamburger-menu" src="images/download.svg" alt="">
             <img src="images/youtube-logo.svg" alt="">
 
         </div>
@@ -388,7 +396,7 @@
              <div class="Create-icon">
                  <img src="images/youtube-apps.svg" alt="">
           
-            <div class="tool-tip">Create</div>
+            <div class="tool-tip">YouTube Apps</div>
             </div>
 
              <div class="Create-icon">
@@ -861,4 +869,14 @@
     </div>
     
 </body>
+<script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const sidebar = document.querySelector('.sidebar');
+    const body = document.body;
+
+    hamburgerMenu.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        body.classList.toggle('sidebar-open');
+    });
+</script>
 </html>
